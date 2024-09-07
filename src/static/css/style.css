@@ -1,0 +1,14 @@
+.itemBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    max-width: 10vw;
+    max-height: 10vw;
+}
+
+.itemContainer{
+    position: relative;
+    display: grid;
+    place-items: center;
+}
