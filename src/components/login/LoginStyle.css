@@ -4,8 +4,78 @@ input, button {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
-@media (max-width: 768px) {
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+    padding: 1rem;
+
+}
+.login-img{
+    display: none;
+    width: 40%;
+    height: 40%;
+}
+
+@media (max-width: 600px) {
     input, button {
         width: 60vw;
+    }
+    .login-form{
+        margin: 10%;
+        transition: all 0.5s;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 600px ) and (max-width: 800px) {
+    input, button {
+        width: 100%;
+    }
+    .login-form{
+        transition: all 0.5s;
+        width: 45%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 800px) {
+    .form-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-content: center;
+        padding: 10vh;
+    }
+    input, button {
+        width: 30vw;
+    }
+    .login-form{
+        transition: all 0.5s;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+}
+@media (min-width: 1200px) {
+    .form-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+        padding: 10vh;
+    }
+    input, button {
+        width: 30vw;
+    }
+    .login-form{
+        transition: all 0.5s;
+        width: 30%;
+        margin: 0 auto;
+    }
+    .login-img{
+        display: block;
     }
 }
