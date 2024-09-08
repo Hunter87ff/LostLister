@@ -1,9 +1,9 @@
-import { items_data_model } from '../../config';
 import Header from "../Header";
 import Footer from "../Footer";
+import * as config from "../../config"
 
 
-const itemList = items_data_model.map((item) => {
+const itemList = config.items_data_model.map((item) => {
     // Transform the item data as needed
     return {
         id: item.id,

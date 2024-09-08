@@ -1,16 +1,5 @@
-// import { MongoClient } from "mongodb";
-// // import process from "process";
-// import * as dotenv from 'dotenv';
-
-// dotenv.config();
-// const MONGO_URI = process.env.MONGO_URI || "";
-
-// export async function get_db(){
-//     const client = new MongoClient(MONGO_URI);
-//     await client.connect();
-//     return client.db("Database");
-// }
-
+// import mongoose from "mongoose";
+// mongoose.connect(process.env.REACT_APP_MONGO_URI)
 
 interface Item {
     id: number;

@@ -1,17 +1,4 @@
 import React, { useState } from 'react';
-const MyComponent = () => {
-    const [isClassActive, setIsClassActive] = useState(false);
-  
-    const toggleClass = () => {
-      setIsClassActive(!isClassActive);
-    };
-    return (
-        <div className={isClassActive ? 'active-class' : ''}>
-          <h1>Hello, World!</h1>
-          <button onClick={toggleClass}>Toggle Class</button>
-        </div>
-      );
-    }
 
 function Header(){
     const [isClassActive, setIsClassActive] = useState(false);

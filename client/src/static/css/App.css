@@ -140,6 +140,10 @@ a{
     box-shadow:  10px 10px 20px #bababa,-10px -10px 20px #ffffff;
 
 }
+.postContainer{
+    min-height: 100vh;
+    overflow: hidden;
+}
 .categories-block h2{
     font-weight: bold;
     margin-left: 1rem;

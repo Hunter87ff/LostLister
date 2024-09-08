@@ -6,8 +6,9 @@ import About from './components/about/About';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './components/login/Login';
 import Post from './components/home/Post';
-import * as config from './config';
+import * as process from 'process';
 
+console.log(process.env.REACT_APP_MONGO_URI)
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
