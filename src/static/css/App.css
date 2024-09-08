@@ -129,6 +129,30 @@ a{
     font-size: 25px;
     margin: 20px;
 }
+.categories-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f7f6f6;
+    box-shadow:  10px 10px 20px #bababa,-10px -10px 20px #ffffff;
+
+}
+.categories-block h2{
+    font-weight: bold;
+    margin-left: 1rem;
+    font-size: 25px;
+    /* margin-top: 5px; */
+    margin-right: 5px;
+}
+.categories-block .block-divider{
+    width: 10%;
+    height: 5px;
+    border-radius: 5px;
+    background: gray;
+}
 footer{
     position: relative;
 }
@@ -210,6 +234,9 @@ footer{
         width: 100%;
         align-items: center;
         text-align: center;
+    }
+    .categories-block .block-divider{
+        width: 100%;
     }
     .cource-block div{
         /* margin-right: auto; */
