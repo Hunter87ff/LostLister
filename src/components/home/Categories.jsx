@@ -4,7 +4,7 @@ import * as config from "../../config"
 
 export default function Categories() {
     return (
-        <div className="post">
+        <div className="post post-container">
 
             {config.items_data_model.map((item) => (
                 <div className="post-content rounded">
@@ -20,8 +20,9 @@ export default function Categories() {
                             {/* <p>Spam Reports : {item.reports}</p> */}
                         </div>
                         <br />
+                        
                     </div>
-                    <button  className='bg-green-600 float-left' onClick={()=>{console.log("claimed : " + item.id)}}>Claim</button>              
+                    <button  className='bg-green-600 float-left' onClick={()=>{console.log("claimed : " + item.id)}}>Claim</button>         
                 </div>
             ))} 
     </div >
