@@ -6,7 +6,7 @@ const item = config.items_data_model[config.items_data_model.length-1];
 export default function LatestPost() {
 
 return  (
-    <div key={item.id} className='itemPost post latestPost'>
+    <div key={item.id} className='itemPost post latestPost grid'>
     <img src={item.image_url} alt="" className="banner" />
     <div className="post-info px-0">
         <h2>Item : {item.title}</h2>

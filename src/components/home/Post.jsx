@@ -27,9 +27,9 @@ export default function Post() {
         <Header />
         <div className="postContainer">
         {itemList.map((item) => (
-            <div key={item.id} className='itemPost post'>
-                <img src={item.image_url} alt="" className="banner" />
-                <div className="post-info px-0">
+            <div key={item.id} className='itemPost post w-50 flex' >
+                <img src={item.image_url} alt="" className="postBanner " />
+                <div className="post-info px-0 m-4">
                     <h2>Title : {item.title}</h2>
                     <p>Details : {item.details}</p>
                     <p>Resolved : {item.resolved?"Resolved":"Not Resolved"}</p>
@@ -37,7 +37,7 @@ export default function Post() {
                     <p>Founded By : {item.founded_by}</p>
                     <p>Founded At : {item.founded_at}</p>
                     <p>Spam Reports : {item.reports}</p>
-                    <button className='bg-green-600' onClick={()=>{console.log("claimed : " + item.id)}}>Claim</button>              
+                    <button className='bg-green-600 ml-0' onClick={()=>{console.log("claimed : " + item.id)}}>Claim</button>              
                 </div>
             </div>
         ))}

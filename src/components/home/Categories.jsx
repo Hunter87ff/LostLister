@@ -4,12 +4,12 @@ import * as config from "../../config"
 
 export default function Categories() {
     return (
-        <div className="post post-container">
+        <div className="post post-container grid">
 
             {config.items_data_model.map((item) => (
                 <div className="post-content rounded">
                     <div key={item.id} className='post-block'>
-                        <img src={item.image_url} alt="" className="rounded object-cover aspect-[4/3" />
+                        <img src={item.image_url} alt="" className="rounded object-cover" />
                         <div className="text-left" >
                             <h2>Item : {item.title}</h2>
                             <p>Details : {item.details}</p>

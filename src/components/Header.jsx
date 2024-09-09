@@ -9,7 +9,7 @@ function Header(){
     };
     return (
         <div className="header">
-            <h2 className="logo">LostLister</h2>
+            <h2 className="logo"><Link to="/">LostLister</Link></h2>
             <i id="menu-bar" className="fa-solid fa-bars" onClick={toggleClass}></i>
             <ul className={`nav ${isClassActive ? 'block' : ''}`}>
                 <Link to="/"><li>Home</li></Link>
