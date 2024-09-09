@@ -6,6 +6,7 @@
     --white:#fff;
     --dark:#000;
 }
+.App{min-height:100vh}
 .header{
     background: #54079b;
     display: flex;

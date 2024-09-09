@@ -12,7 +12,7 @@ return  (
         <h2>Item : {item.title}</h2>
         <p>Details : {item.details}</p>
         <p>Resolved : {item.resolved?"Resolved":"Not Resolved"}</p>
-        <p>Owner : {item.owner||"notFound"}</p>
+        <p>Owner : {item.owner||"Unknown"}</p>
         <p>Founded By : {item.founded_by}</p>
         <p>Founded At : {item.founded_at}</p>
         <p>Spam Reports : {item.reports}</p>
