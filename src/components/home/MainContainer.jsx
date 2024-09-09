@@ -1,4 +1,4 @@
-import Courses from "./Courses"
+import Categories from "./Categories"
 import LatestPost from "./LatestPost"
 
 
@@ -9,10 +9,10 @@ export default function MainContainer() {
         <div className="main" >
             <LatestPost />
             <div className="categories-block">
-                <h2>Categories</h2>
+                <h2>Posts</h2>
                 <div className="block-divider"></div>
             </div>
-            <Courses />
+            <Categories />
         </div>
     )
 }

@@ -6,28 +6,6 @@
     --white:#fff;
     --dark:#000;
 }
-/* body{
-    overflow-x: hidden;
-} */
-h3{
-    font-size: 20px;
-    font-weight: 700;
-}
-
-h1{
-    font-size: 30px;
-    font-weight: 600;
-}
-a{
-    text-decoration: none;
-}
-.block{
-    display: block!important;
-}
-.hidden{
-    display: none!important;
-}
-
 .header{
     background: #54079b;
     display: flex;
@@ -90,9 +68,20 @@ a{
     font-weight: 600;
     font-size: 20px;
 }
-.cource-block{
-    margin: 10px;
+.post-content{
     box-shadow:  10px 10px 20px #bababa,-10px -10px 20px #ffffff;
+    position: relative;
+    margin: 10px;
+}
+.post-content:hover{
+    background: #e9e8e8;
+    box-shadow: inset 7px 7px 11px #b6b5b5,
+                inset -7px -7px 11px #ffffff;
+}
+
+.post-block{
+    max-width: 100%;
+    overflow: hidden;
     padding: 10px;
     border-radius: 5px;
     display: flex;
@@ -100,21 +89,26 @@ a{
     align-items: center;
     transition: 0.1s;
 }
-.cource-block:hover{
+.post-block:hover{
     transition: 0.1s;
     border-radius: 8px;
-    background: #e9e8e8;
-    box-shadow: inset 7px 7px 11px #b6b5b5,
-                inset -7px -7px 11px #ffffff;
+
 }
-.cource-block img{
-    max-height: 200px;
+.post-block img{
+    max-height: 380px;
+    max-width: 50%;
     width: fit-content;
     padding: 0;
 }
-.cource-block div{
+.post-block div *{
+    margin: 5px;
     text-align: left;
+    align-items: left;
+    overflow: hidden;
+    margin-left: 0px;
+    max-width: 90%;
 }
+
 .center-header{
     justify-content: center;
     text-align: center;
@@ -144,6 +138,9 @@ a{
     min-height: 100vh;
     overflow: hidden;
 }
+.claim-btn{
+    border: 1px solid #000;
+}
 .categories-block h2{
     font-weight: bold;
     margin-left: 1rem;
@@ -162,7 +159,6 @@ footer{
 }
 .footer-content{
     position: absolute;
-    /* border: 1px solid #fff; */
     width: 100%;
     bottom: 0px;
     padding: 0px;
@@ -171,7 +167,15 @@ footer{
 .footer-content .footer-tab *{
     margin-left: 1vh;
 }
-@media (min-width:600px){
+/* DESKTOP 700px */
+@media (min-width:700px){
+    .post-content .post-block div{
+        padding: 5px;
+    }
+    .post-content .post-block img{
+        max-height: 25vh;
+    }
+
     .footer-content{
         display: flex;
         flex-direction: row;
@@ -192,7 +196,7 @@ footer{
     }
 }
 /* MOBILE VIEW */
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
     .header{
         justify-content: space-between;
     }
@@ -230,7 +234,7 @@ footer{
     .post-info{
         text-align: left;
     }
-    .cource-block{
+    .post-block{
         flex-direction: column;
         flex-wrap: wrap;
         overflow-x: hidden;
@@ -242,10 +246,13 @@ footer{
     .categories-block .block-divider{
         width: 100%;
     }
-    .cource-block div{
+    .post-block div{
         /* margin-right: auto; */
         align-items: center;
         text-align: center;
+    }
+    .post-block img{
+        max-width: 100%;
     }
     .footer-content{
         position: relative;
@@ -255,4 +262,20 @@ footer{
     }
 
     
+}
+
+h3{font-size: 20px;font-weight: 700;}
+h1{font-size: 30px;font-weight: 600;}
+a{text-decoration: none;}
+.block{display: block!important;}
+.hidden{ display: none!important;}
+
+button{
+    text-align: center!important;
+    transition: 0.5s;
+}
+button:hover{
+    color: #fff;
+    transition: 0.5s;
+    filter: saturation(1.5);
 }

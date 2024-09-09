@@ -1,12 +1,24 @@
+import * as config from "../../config"
+
+
+
+const item = config.items_data_model[0];
 export default function LatestPost() {
 
 return  (
-    <div className="post latestPost" >
-        <img src="https://img.freepik.com/premium-photo/crimson-flash-drive-isolated-clean-white-background-clear-png-white-background_94628-93417.jpg?semt=ais_hybrid" alt="" className="banner" />
-        <div className="post-info" >
-            <h2>Red Color Pendrive</h2>
-            <p>Bhadwa University is a private university located in Bharasat, Awest Bengal, India. It was established in 1999. It is the best university in the world in terms of providing top quality un-employed skill less students</p>
-        </div>
+    <div key={item.id} className='itemPost post latestPost'>
+    <img src={item.image_url} alt="" className="banner" />
+    <div className="post-info px-0">
+        <h2>Title : {item.title}</h2>
+        <p>Details : {item.details}</p>
+        <p>Resolved : {item.resolved?"Resolved":"Not Resolved"}</p>
+        <p>Owner : {item.owner||"notFound"}</p>
+        <p>Founded By : {item.founded_by}</p>
+        <p>Founded At : {item.founded_at}</p>
+        <p>Spam Reports : {item.reports}</p>
+        <button className='bg-green-600 ml-0 w-50' onClick={()=>{console.log("claimed : " + item.id)}}>Claim</button>
+        <button className="bg-red-400 text-white ml-0 w-50">Report</button>
     </div>
+</div>
 );
 }
