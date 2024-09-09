@@ -175,6 +175,13 @@ footer{
     .post-content .post-block img{
         max-height: 25vh;
     }
+    .latestPost .banner{
+        max-width: 80%;
+        max-height: 90%;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
 
     .footer-content{
         display: flex;
