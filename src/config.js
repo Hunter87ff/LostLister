@@ -5,8 +5,8 @@ export const items_data_model = [
     {
         id: 7823547234,
         created_at: new Date(), // Assuming datetime.datetime.now() translates to a Date object
-        title: "Lost Pendrive",
-        details: "32gb pendrive, red color",
+        title: "Sandisk Pendrive",
+        details: "32gb pendrive, red color, with a keychain attached",
         resolved: true,
         owner: "bwubca23654",
         founded_by: "bwubca22245",
@@ -43,7 +43,7 @@ export const items_data_model = [
         created_at: new Date(), // Assuming datetime.datetime.now() translates to a Date object
         title: "Smart Watch Titan",
         details: "Titan Smart watch , green color",
-        resolved: true,
+        resolved: false,
         owner: "bwubca23654",
         founded_by: "bwubca22245",
         founded_at: "UB6 314, insdide the desk of last bench",

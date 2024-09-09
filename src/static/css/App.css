@@ -231,9 +231,17 @@ footer{
         align-items: center;
         text-align: center;
     }
+    .latestPost .post-info button{
+        width: 100%;
+        margin-left: 0px;
+    }
     .post-container{
         padding: 0px;
         margin: 0px;
+    }
+    .itemPost button{
+        width: 100%;
+        margin-left: 0px;
     }
     .post-content{
         padding: 10px;
