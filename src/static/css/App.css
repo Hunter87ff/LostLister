@@ -144,7 +144,7 @@
     margin-right: 5px;
 }
 .categories-block .block-divider{
-    width: 10%;
+    width: 100%;
     height: 5px;
     border-radius: 5px;
     background: gray;
@@ -173,7 +173,7 @@ footer{
     }
     .post-content button{
         width: 50%;
-        margin-left: 0px;
+        margin-left: 5px;
     }
     .latestPost .banner{
         max-width: 80%;
