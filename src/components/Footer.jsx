@@ -1,9 +1,9 @@
 
 
 import React from 'react';
-const Footer: React.FC = () => {
+const Footer = ()=>{
     return (
-        <footer className="bg-gray-900 text-white py-8">
+        <footer className="bg-gray-900 text-white py-8 relative">
             <div className="container mx-auto flex flex-col items-center">
                 <h2 className="text-2xl font-bold mb-4">LostLister</h2>
                 <p className="text-center text-gray-400 mb-16">

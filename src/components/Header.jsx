@@ -14,7 +14,7 @@ function Header(){
             <ul className={`nav ${isClassActive ? 'block' : ''}`}>
                 <Link to="/"><li>Home</li></Link>
                 <Link to="/about"><li>About</li></Link>
-                <Link to="#"><li>Contact</li></Link>
+                <Link to="#"><li>Request</li></Link>
                 <Link to="/post"><li>Posts</li></Link>
                 <Link to="/login"><li>Log in</li></Link>
             </ul>

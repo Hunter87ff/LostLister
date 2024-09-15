@@ -149,9 +149,7 @@
     border-radius: 5px;
     background: gray;
 }
-footer{
-    position: relative;
-}
+
 .footer-content{
     position: absolute;
     width: 100%;
