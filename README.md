@@ -1,6 +1,5 @@
 # LostLister
 LostLister is a open source web based solution to help those students who lost something inside our university.
-Currently working indipendently, and not affiliated by the university.
 
 
 
